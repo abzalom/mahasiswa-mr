@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "name": "admin",
+    "email": "admin@email.com",
+    "email_verified_at": "2023-04-24 12:17:15",
+    "phone": "+6281234567890",
+    "phone_verified_at": "2023-04-24 12:17:15",
+    "phone_is_verified": 1,
+    "password": "$2y$10$JBlJeR/.E8RPQCBGCHNhT.igZmBOhI0iAS48vg5y4cMr0XaxPRw5q",
+    "directory": "id_1_admin"
+  },
+  {
+    "id": "2",
+    "name": "Absalom Fredy Daud",
+    "email": "abzalom.kyeuw2@gmail.com",
+    "email_verified_at": "2023-04-24 12:17:16",
+    "phone": "+6281247469077",
+    "phone_verified_at": "2023-04-24 12:17:16",
+    "phone_is_verified": 1,
+    "password": "$2y$10$LsTqv53/sZL6p7MSSKZy7uvaV9..gUWsFXi7P2aSqSZgadodOcGZ.",
+    "directory": "id_2_absalom"
+  },
+  {
+    "id": "3",
+    "name": "daud",
+    "email": "daud@email.com",
+    "email_verified_at": "2023-04-24 12:17:16",
+    "phone": "+6281234567891",
+    "phone_verified_at": "2023-04-24 12:17:16",
+    "phone_is_verified": 1,
+    "password": "$2y$10$Jjj2UW0knl03qkBhv3QSfuVs/32T1CiQ7auf7s6ulPb4cWFThjguy",
+    "directory": "id_3_daud"
+  }
+]

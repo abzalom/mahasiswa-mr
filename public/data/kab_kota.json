@@ -1,0 +1,2572 @@
+[
+    {
+        "id_provinsi": "1",
+        "nama": "aceh barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "aceh barat daya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "aceh besar",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "aceh jaya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "aceh selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "aceh singkil",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "aceh tamiang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "aceh tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "aceh tenggara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "aceh timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "aceh utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "bener meriah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "bireuen",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "gayo lues",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "nagan raya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "pidie",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "pidie jaya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "simeulue",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "banda aceh",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "langsa",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "lhokseumawe",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "sabang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "1",
+        "nama": "subulussalam",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "asahan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "batubara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "dairi",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "deli serdang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "humbang hasundutan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "karo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "labuhanbatu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "labuhanbatu selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "labuhanbatu utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "langkat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "mandailing natal",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "nias",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "nias barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "nias selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "nias utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "padang lawas",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "padang lawas utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "pakpak bharat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "samosir",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "serdang bedagai",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "simalungun",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "tapanuli selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "tapanuli tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "tapanuli utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "toba samosir",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "binjai",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "gunungsitoli",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "medan",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "padangsidempuan",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "pematangsiantar",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "sibolga",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "tanjungbalai",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "2",
+        "nama": "tebing tinggi",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "agam",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "dharmasraya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "kepulauan mentawai",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "lima puluh kota",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "padang pariaman",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "pasaman",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "pasaman barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "pesisir selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "sijunjung",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "solok",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "solok selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "tanah datar",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "bukittinggi",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "padang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "padangpanjang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "pariaman",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "payakumbuh",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "sawahlunto",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "3",
+        "nama": "solok",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "banyuasin",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "empat lawang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "lahat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "muara enim",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "musi banyuasin",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "musi rawas",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "musi rawas utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "ogan ilir",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "ogan komering ilir",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "ogan komering ulu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "ogan komering ulu selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "ogan komering ulu timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "penukal abab lematang ilir",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "lubuklinggau",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "pagar alam",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "4",
+        "nama": "palembang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "prabumulih",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "bengkalis",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "indragiri hilir",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "indragiri hulu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "kampar",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "kepulauan meranti",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "kuantan singingi",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "pelalawan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "rokan hilir",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "rokan hulu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "siak",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "dumai",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "5",
+        "nama": "pekanbaru",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "6",
+        "nama": "bintan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "6",
+        "nama": "karimun",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "6",
+        "nama": "kepulauan anambas",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "6",
+        "nama": "lingga",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "6",
+        "nama": "natuna",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "6",
+        "nama": "batam",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "6",
+        "nama": "tanjung pinang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "7",
+        "nama": "batanghari",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "7",
+        "nama": "bungo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "7",
+        "nama": "kerinci",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "7",
+        "nama": "merangin",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "7",
+        "nama": "muaro jambi",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "7",
+        "nama": "sarolangun",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "7",
+        "nama": "tanjung jabung barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "7",
+        "nama": "tanjung jabung timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "7",
+        "nama": "tebo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "7",
+        "nama": "jambi",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "7",
+        "nama": "sungai penuh",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "8",
+        "nama": "bengkulu selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "8",
+        "nama": "bengkulu tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "8",
+        "nama": "bengkulu utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "8",
+        "nama": "kaur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "8",
+        "nama": "kepahiang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "8",
+        "nama": "lebong",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "8",
+        "nama": "mukomuko",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "8",
+        "nama": "rejang lebong",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "8",
+        "nama": "seluma",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "8",
+        "nama": "bengkulu",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "9",
+        "nama": "bangka",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "9",
+        "nama": "bangka barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "9",
+        "nama": "bangka selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "9",
+        "nama": "bangka tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "9",
+        "nama": "belitung",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "9",
+        "nama": "belitung timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "9",
+        "nama": "pangkal pinang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "lampung tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "lampung utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "lampung selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "lampung barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "lampung timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "mesuji",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "pesawaran",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "pesisir barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "pringsewu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "tulang bawang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "tulang bawang barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "tanggamus",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "way kanan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "bandar lampung",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "10",
+        "nama": "metro",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "11",
+        "nama": "lebak",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "11",
+        "nama": "pandeglang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "11",
+        "nama": "serang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "11",
+        "nama": "tangerang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "11",
+        "nama": "cilegon",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "11",
+        "nama": "serang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "11",
+        "nama": "tangerang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "11",
+        "nama": "tangerang selatan",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "bandung",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "bandung barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "bekasi",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "bogor",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "ciamis",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "cianjur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "cirebon",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "garut",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "indramayu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "karawang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "kuningan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "majalengka",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "pangandaran",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "purwakarta",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "subang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "sukabumi",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "sumedang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "tasikmalaya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "bandung",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "banjar",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "bekasi",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "bogor",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "cimahi",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "cirebon",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "depok",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "sukabumi",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "12",
+        "nama": "tasikmalaya",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "banjarnegara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "banyumas",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "batang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "blora",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "boyolali",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "brebes",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "cilacap",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "demak",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "grobogan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "jepara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "karanganyar",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "kebumen",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "kendal",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "klaten",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "kudus",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "magelang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "pati",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "pekalongan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "pemalang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "purbalingga",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "purworejo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "rembang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "semarang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "sragen",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "sukoharjo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "tegal",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "temanggung",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "wonogiri",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "wonosobo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "magelang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "pekalongan",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "salatiga",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "semarang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "surakarta",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "13",
+        "nama": "tegal",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "bangkalan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "banyuwangi",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "blitar",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "bojonegoro",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "bondowoso",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "gresik",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "jember",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "jombang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "kediri",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "lamongan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "lumajang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "madiun",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "magetan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "malang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "mojokerto",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "nganjuk",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "ngawi",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "pacitan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "pamekasan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "pasuruan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "ponorogo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "probolinggo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "sampang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "sidoarjo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "situbondo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "sumenep",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "trenggalek",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "tuban",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "tulungagung",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "batu",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "blitar",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "kediri",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "madiun",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "malang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "mojokerto",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "pasuruan",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "probolinggo",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "14",
+        "nama": "surabaya",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "15",
+        "nama": "administrasi jakarta barat",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "15",
+        "nama": "administrasi jakarta pusat",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "15",
+        "nama": "administrasi jakarta selatan",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "15",
+        "nama": "administrasi jakarta timur",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "15",
+        "nama": "administrasi jakarta utara",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "15",
+        "nama": "administrasi kepulauan seribu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "bantul",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "gunungkidul",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "kulon progo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "sleman",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "yogyakarta",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "badung",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "bangli",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "buleleng",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "gianyar",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "jembrana",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "karangasem",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "klungkung",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "tabanan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "16",
+        "nama": "denpasar",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "17",
+        "nama": "bima",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "17",
+        "nama": "dompu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "17",
+        "nama": "lombok barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "17",
+        "nama": "lombok tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "17",
+        "nama": "lombok timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "17",
+        "nama": "lombok utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "17",
+        "nama": "sumbawa",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "17",
+        "nama": "sumbawa barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "17",
+        "nama": "bima",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "17",
+        "nama": "mataram",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "alor",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "belu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "ende",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "flores timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "kupang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "lembata",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "malaka",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "manggarai",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "manggarai barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "manggarai timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "ngada",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "nagekeo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "rote ndao",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "sabu raijua",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "sikka",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "sumba barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "sumba barat daya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "sumba tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "sumba timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "timor tengah selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "timor tengah utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "18",
+        "nama": "kupang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "bengkayang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "kapuas hulu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "kayong utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "ketapang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "kubu raya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "landak",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "melawi",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "mempawah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "sambas",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "sanggau",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "sekadau",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "sintang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "pontianak",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "19",
+        "nama": "singkawang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "balangan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "banjar",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "barito kuala",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "hulu sungai selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "hulu sungai tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "hulu sungai utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "kotabaru",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "tabalong",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "tanah bumbu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "tanah laut",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "tapin",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "banjarbaru",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "20",
+        "nama": "banjarmasin",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "barito selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "barito timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "barito utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "gunung mas",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "kapuas",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "katingan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "kotawaringin barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "kotawaringin timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "lamandau",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "murung raya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "pulang pisau",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "sukamara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "seruyan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "21",
+        "nama": "palangka raya",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "22",
+        "nama": "berau",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "22",
+        "nama": "kutai barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "22",
+        "nama": "kutai kartanegara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "22",
+        "nama": "kutai timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "22",
+        "nama": "mahakam ulu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "22",
+        "nama": "paser",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "22",
+        "nama": "penajam paser utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "22",
+        "nama": "balikpapan",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "22",
+        "nama": "bontang",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "22",
+        "nama": "samarinda",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "23",
+        "nama": "bulungan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "23",
+        "nama": "malinau",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "23",
+        "nama": "nunukan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "23",
+        "nama": "tana tidung",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "23",
+        "nama": "tarakan",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "24",
+        "nama": "boalemo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "24",
+        "nama": "bone bolango",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "24",
+        "nama": "gorontalo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "24",
+        "nama": "gorontalo utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "24",
+        "nama": "pohuwato",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "24",
+        "nama": "gorontalo",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "bantaeng",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "barru",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "bone",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "bulukumba",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "enrekang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "gowa",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "jeneponto",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "kepulauan selayar",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "luwu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "luwu timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "luwu utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "maros",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "pangkajene dan kepulauan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "pinrang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "sidenreng rappang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "sinjai",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "soppeng",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "takalar",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "tana toraja",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "toraja utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "wajo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "makassar",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "palopo",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "25",
+        "nama": "parepare",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "bombana",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "buton",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "buton selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "buton tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "buton utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "kolaka",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "kolaka timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "kolaka utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "konawe",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "konawe kepulauan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "konawe selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "konawe utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "muna",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "muna barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "wakatobi",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "bau-bau",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "26",
+        "nama": "kendari",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "banggai",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "banggai kepulauan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "banggai laut",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "buol",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "donggala",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "morowali",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "morowali utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "parigi moutong",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "poso",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "sigi",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "tojo una-una",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "toli-toli",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "27",
+        "nama": "palu",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "bolaang mongondow",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "bolaang mongondow selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "bolaang mongondow timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "bolaang mongondow utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "kepulauan sangihe",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "kepulauan siau tagulandang biaro",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "kepulauan talaud",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "minahasa",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "minahasa selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "minahasa tenggara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "minahasa utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "bitung",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "kotamobagu",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "manado",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "28",
+        "nama": "tomohon",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "29",
+        "nama": "majene",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "29",
+        "nama": "mamasa",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "29",
+        "nama": "mamuju",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "29",
+        "nama": "mamuju tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "29",
+        "nama": "mamuju utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "29",
+        "nama": "polewali mandar",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "29",
+        "nama": "mamuju",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "30",
+        "nama": "buru",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "30",
+        "nama": "buru selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "30",
+        "nama": "kepulauan aru",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "30",
+        "nama": "maluku barat daya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "30",
+        "nama": "maluku tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "30",
+        "nama": "maluku tenggara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "30",
+        "nama": "maluku tenggara barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "30",
+        "nama": "seram bagian barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "30",
+        "nama": "seram bagian timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "30",
+        "nama": "ambon",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "30",
+        "nama": "tual",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "31",
+        "nama": "halmahera barat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "31",
+        "nama": "halmahera tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "31",
+        "nama": "halmahera utara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "31",
+        "nama": "halmahera selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "31",
+        "nama": "kepulauan sula",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "31",
+        "nama": "halmahera timur",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "31",
+        "nama": "pulau morotai",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "31",
+        "nama": "pulau taliabu",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "31",
+        "nama": "ternate",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "31",
+        "nama": "tidore kepulauan",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "asmat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "biak numfor",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "boven digoel",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "deiyai",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "dogiyai",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "intan jaya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "jayapura",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "jayawijaya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "keerom",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "kepulauan yapen",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "lanny jaya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "mamberamo raya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "mamberamo tengah",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "mappi",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "merauke",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "mimika",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "nabire",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "nduga",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "paniai",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "pegunungan bintang",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "puncak",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "puncak jaya",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "sarmi",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "supiori",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "tolikara",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "waropen",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "yahukimo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "yalimo",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "32",
+        "nama": "jayapura",
+        "kab_kota": "kota"
+    },
+    {
+        "id_provinsi": "33",
+        "nama": "fakfak",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "33",
+        "nama": "kaimana",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "33",
+        "nama": "manokwari",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "33",
+        "nama": "manokwari selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "33",
+        "nama": "maybrat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "33",
+        "nama": "pegunungan arfak",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "33",
+        "nama": "raja ampat",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "33",
+        "nama": "sorong",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "33",
+        "nama": "sorong selatan",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "33",
+        "nama": "tambrauw",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "33",
+        "nama": "teluk bintuni",
+        "kab_kota": "kabupaten"
+    },
+    {
+        "id_provinsi": "33",
+        "nama": "teluk wondama",
+        "kab_kota": "kabupaten"
+    }
+]
