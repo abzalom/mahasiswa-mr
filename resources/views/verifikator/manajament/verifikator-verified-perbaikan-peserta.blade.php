@@ -41,7 +41,7 @@
                     </h5>
                     <div class="row">
                         <div class="col-md-2">
-                            @if (Storage::disk('data')->exists($peserta->directory . '/foto_peserta/' . $peserta->foto_peserta))
+                            @if ($peserta->checkPersyaratan($peserta->directory, 'foto_peserta', $peserta->foto_peserta))
                                 <a href="{{ asset('data/' . $peserta->directory . '/foto_peserta/' . $peserta->foto_peserta) }}" target="_blank">
                                     <img src="{{ asset('data/' . $peserta->directory . '/foto_peserta/' . $peserta->foto_peserta) }}" alt="{{ $peserta->foto_peserta }}" class="img-thumbnail">
                                 </a>
@@ -507,7 +507,7 @@
                             <label class="col-sm">Foto Peserta</label>
                             <div class="col-sm mt-0">
                                 <div class="border-0">
-                                    @if (Storage::disk('data')->exists($peserta->directory . '/foto_peserta/' . $peserta->foto_peserta))
+                                    @if ($peserta->checkPersyaratan($peserta->directory, 'foto_peserta', $peserta->foto_peserta))
                                         <a href="{{ asset('data/' . $peserta->directory . '/foto_peserta/' . $peserta->foto_peserta) }}" target="_blank">
 
                                             <h5><i class="far fa-check-circle" style="color: #005eff;"></i> Lihat File</h5>
@@ -525,7 +525,7 @@
                             <label class="col-sm">KTP</label>
                             <div class="col-sm mt-0">
                                 <div class="border-0">
-                                    @if (Storage::disk('data')->exists($peserta->directory . '/file_ktp/' . $peserta->file_ktp))
+                                    @if ($peserta->checkPersyaratan($peserta->directory, 'file_ktp', $peserta->file_ktp))
                                         <a href="{{ asset('data/' . $peserta->directory . '/file_ktp/' . $peserta->file_ktp) }}" target="_blank">
                                             <h5><i class="far fa-check-circle" style="color: #005eff;"></i> Lihat File</h5>
                                         </a>
@@ -542,7 +542,7 @@
                             <label class="col-sm">Kartu Pengenal Mahasiswa</label>
                             <div class="col-sm mt-0">
                                 <div class="border-0">
-                                    @if (Storage::disk('data')->exists($peserta->directory . '/file_kpm/' . $peserta->file_kpm))
+                                    @if ($peserta->checkPersyaratan($peserta->directory, 'file_kpm', $peserta->file_kpm))
                                         <a href="{{ asset('data/' . $peserta->directory . '/file_kpm/' . $peserta->file_kpm) }}" target="_blank">
                                             <h5><i class="far fa-check-circle" style="color: #005eff;"></i> Lihat File</h5>
                                         </a>
@@ -559,7 +559,7 @@
                             <label class="col-sm">Kartu Hasil Studi</label>
                             <div class="col-sm mt-0">
                                 <div class="border-0">
-                                    @if (Storage::disk('data')->exists($peserta->directory . '/file_khs/' . $peserta->file_khs))
+                                    @if ($peserta->checkPersyaratan($peserta->directory, 'file_khs', $peserta->file_khs))
                                         <a href="{{ asset('data/' . $peserta->directory . '/file_khs/' . $peserta->file_khs) }}" target="_blank">
                                             <h5><i class="far fa-check-circle" style="color: #005eff;"></i> Lihat File</h5>
                                         </a>
@@ -576,7 +576,7 @@
                             <label class="col-sm">Kartu Rencana Studi</label>
                             <div class="col-sm mt-0">
                                 <div class="border-0">
-                                    @if (Storage::disk('data')->exists($peserta->directory . '/file_krs/' . $peserta->file_krs))
+                                    @if ($peserta->checkPersyaratan($peserta->directory, 'file_krs', $peserta->file_krs))
                                         <a href="{{ asset('data/' . $peserta->directory . '/file_krs/' . $peserta->file_krs) }}" target="_blank">
                                             <h5><i class="far fa-check-circle" style="color: #005eff;"></i> Lihat File</h5>
                                         </a>
@@ -593,7 +593,7 @@
                             <label class="col-sm">Surat Keterangan Aktif Kuliah</label>
                             <div class="col-sm mt-0">
                                 <div class="border-0">
-                                    @if (Storage::disk('data')->exists($peserta->directory . '/file_surat_aktif/' . $peserta->file_surat_aktif))
+                                    @if ($peserta->checkPersyaratan($peserta->directory, 'file_surat_aktif', $peserta->file_surat_aktif))
                                         <a href="{{ asset('data/' . $peserta->directory . '/file_surat_aktif/' . $peserta->file_surat_aktif) }}" target="_blank">
                                             <h5><i class="far fa-check-circle" style="color: #005eff;"></i> Lihat File</h5>
                                         </a>
@@ -610,7 +610,7 @@
                             <label class="col-sm">Kwitansi SPP Terakhir</label>
                             <div class="col-sm mt-0">
                                 <div class="border-0">
-                                    @if (Storage::disk('data')->exists($peserta->directory . '/foto_kwitansi/' . $peserta->foto_kwitansi))
+                                    @if ($peserta->checkPersyaratan($peserta->directory, 'foto_kwitansi', $peserta->foto_kwitansi))
                                         <a href="{{ asset('data/' . $peserta->directory . '/foto_kwitansi/' . $peserta->foto_kwitansi) }}" target="_blank">
                                             <h5><i class="far fa-check-circle" style="color: #005eff;"></i> Lihat File</h5>
                                         </a>
@@ -627,7 +627,7 @@
                             <label class="col-sm">Screenshot Bukti Forlap Dikti</label>
                             <div class="col-sm mt-0">
                                 <div class="border-0">
-                                    @if (Storage::disk('data')->exists($peserta->directory . '/foto_dikti/' . $peserta->foto_dikti))
+                                    @if ($peserta->checkPersyaratan($peserta->directory, 'foto_dikti', $peserta->foto_dikti))
                                         <a href="{{ asset('data/' . $peserta->directory . '/foto_dikti/' . $peserta->foto_dikti) }}" target="_blank">
                                             <h5><i class="far fa-check-circle" style="color: #005eff;"></i> Lihat File</h5>
                                         </a>
@@ -644,7 +644,7 @@
                             <label class="col-sm">Kartu Keluarga</label>
                             <div class="col-sm mt-0">
                                 <div class="border-0">
-                                    @if (Storage::disk('data')->exists($peserta->directory . '/file_kk/' . $peserta->file_kk))
+                                    @if ($peserta->checkPersyaratan($peserta->directory, 'file_kk', $peserta->file_kk))
                                         <a href="{{ asset('data/' . $peserta->directory . '/file_kk/' . $peserta->file_kk) }}" target="_blank">
                                             <h5><i class="far fa-check-circle" style="color: #005eff;"></i> Lihat File</h5>
                                         </a>

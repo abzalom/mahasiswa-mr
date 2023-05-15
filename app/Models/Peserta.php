@@ -54,20 +54,68 @@ class Peserta extends Authenticatable implements MustVerifyEmail
      */
     public function thumbnail(): string
     {
-        if (Storage::disk('data')->exists('/' . $this->directory . '/thumbnails/' . $this->image)) {
-            return asset('data/' . $this->directory . '/thumbnails/' . $this->image);
-        } else {
-            return  asset('/assets/img/side_bar_icon.svg');
-        }
-    }
-
-    public function photo(): string
-    {
-        if (Storage::disk('data')->exists($this->directory . '/foto_peserta/' . $this->foto_peserta)) {
+        if (file_exists(public_path('data/' . $this->directory . '/foto_peserta/' . $this->foto_peserta))) {
             return asset('data/' . $this->directory . '/foto_peserta/' . $this->foto_peserta);
         } else {
             return  asset('/assets/img/side_bar_icon.svg');
         }
+        // if (Storage::disk('data')->exists('/' . $this->directory . '/thumbnails/' . $this->image)) {
+        //     return asset('data/' . $this->directory . '/thumbnails/' . $this->image);
+        // } else {
+        //     return  asset('/assets/img/side_bar_icon.svg');
+        // }
+    }
+
+    public function photo(): string
+    {
+        if (file_exists(public_path('data/' . $this->directory . '/foto_peserta/' . $this->foto_peserta))) {
+            return asset('data/' . $this->directory . '/foto_peserta/' . $this->foto_peserta);
+        } else {
+            return  asset('/assets/img/side_bar_icon.svg');
+        }
+        // if (Storage::disk('data')->exists($this->directory . '/foto_peserta/' . $this->foto_peserta)) {
+        //     return asset('data/' . $this->directory . '/foto_peserta/' . $this->foto_peserta);
+        // } else {
+        //     return  asset('/assets/img/side_bar_icon.svg');
+        // }
+    }
+
+    public function checkPersyaratan($dir, $subdir, $file)
+    {
+        if (file_exists(public_path('data/' . $dir . '/' . $subdir . '/' . $file))) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function validasiPersyaratan()
+    {
+        $return = false;
+        if (
+            file_exists(public_path('data/' . $this->directory . '/rekening/' . $this->foto_rekening))
+            and
+            file_exists(public_path('data/' . $this->directory . '/foto_peserta/' . $this->foto_peserta))
+            and
+            file_exists(public_path('data/' . $this->directory . '/file_ktp/' . $this->file_ktp))
+            and
+            file_exists(public_path('data/' . $this->directory . '/file_kk/' . $this->file_kk))
+            and
+            file_exists(public_path('data/' . $this->directory . '/file_kpm/' . $this->file_kpm))
+            and
+            file_exists(public_path('data/' . $this->directory . '/file_khs/' . $this->file_khs))
+            and
+            file_exists(public_path('data/' . $this->directory . '/file_krs/' . $this->file_krs))
+            and
+            file_exists(public_path('data/' . $this->directory . '/file_surat_aktif/' . $this->file_surat_aktif))
+            and
+            file_exists(public_path('data/' . $this->directory . '/foto_kwitansi/' . $this->foto_kwitansi))
+            and
+            file_exists(public_path('data/' . $this->directory . '/foto_dikti/' . $this->foto_dikti))
+        ) {
+            $return = true;
+        }
+        return $return;
     }
 
     /**

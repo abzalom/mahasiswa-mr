@@ -7,15 +7,26 @@ use App\Models\User;
 use App\Rules\MatchOldPassword;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 use Intervention\Image\Facades\Image;
 
 class VerifikatorController extends Controller
 {
+
     public function index(): RedirectResponse
     {
-        return redirect(route('verifikator.dashboard'));
+        $user = User::find(auth()->user()->id);
+        if ($user->hasRole('admin')) {
+            return redirect()->route('admin.dashboard');
+        }
+        if ($user->hasRole('koordinator')) {
+            return redirect()->route('koordinator.dashboard');
+        }
+        if ($user->hasRole('verifikator')) {
+            return redirect()->route('verifikator.dashboard');
+        }
     }
 
     public function dashboard()
@@ -157,7 +168,7 @@ class VerifikatorController extends Controller
             'pesertas' => fn ($q) => $q->where('peserta_id', $id),
             // 'peserta' => fn ($q) => $q->find($id),
         ])->find(auth()->user()->id);
-        // dump($peserta->toArray());
+        // dump($peserta->pesertas->toArray());
         // dump($peserta->verified);
         if (!$peserta->pesertas->count()) {
             return to_route('verifikator.man.peserta')->with('pesan', 'Data Peserta yang di minta tidak ditemukan atau belum di sinkron verifikatornya oleh koordinator');

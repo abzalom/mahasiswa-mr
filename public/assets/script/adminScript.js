@@ -21,8 +21,6 @@ $(document).ready(function () {
         });
     })
 
-    alert('oke');
-
     $('.datatable').dataTable();
 
     $('#datatable').dataTable({

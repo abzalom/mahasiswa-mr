@@ -1,18 +1,22 @@
 <x-peserta.peserta-layout :web="$web">
 
     @if ($lengkap)
-        <div class="row">
-            <div class="alert alert-default-info col-lg-8 mx-auto">
-                @if (!$user->kirim)
-                    @if ($user->verified->count() == null)
-                        <h3>Data anda sudah lengkap, apakah anda ingin mengirimkan formulir anda untuk diverifikasi?</h3>
-                        <p class="text-muted font-italic"><span class="text-danger text-bold">Peringatan</span> : jika ada yang ingin di perbaiki silahkan lakukan perbaikan. karena data yang sudah dikirim tidak dapat di ubah lagi tanpa persetujuan tim verifikator!</p>
-                        <form action="{{ route('peserta.kirim.formulir') }}" method="post">
-                            @csrf
-                            <button type="submit" class="btn btn-outline-success font-weight-bold col-12">Klik disini untuk kirim formulir sekarang</button>
-                        </form>
-                    @else
-                        @if ($user->verified->last()->verify_status_id == 2)
+        @if ($user->validasiPersyaratan())
+            @if (!$user->kirim)
+                @if ($user->verified->count() == null)
+                    <div class="row">
+                        <div class="alert alert-default-info col-lg-8 mx-auto">
+                            <h3>Data anda sudah lengkap, apakah anda ingin mengirimkan formulir anda untuk diverifikasi?</h3>
+                            <p class="text-muted font-italic"><span class="text-danger text-bold">Peringatan</span> : jika ada yang ingin di perbaiki silahkan lakukan perbaikan. karena data yang sudah dikirim tidak dapat di ubah lagi tanpa persetujuan tim verifikator!</p>
+                            <form action="{{ route('peserta.kirim.formulir') }}" method="post">
+                                @csrf
+                                <button type="submit" class="btn btn-outline-success font-weight-bold col-12">Klik disini untuk kirim formulir sekarang</button>
+                            </form>
+                        </div>
+                    </div>
+                @else
+                    <div class="row">
+                        <div class="alert alert-default-warning col-lg-8 mx-auto">
                             <h3>Maaf! formulir anda telah divalidasi tidak lengkap</h3>
                             <p>Berikut Catatan Verifikator{!! $user->verified->last()->keterangan !!}</p>
                             <p class="text-muted font-italic">Segera lakukan perbaikan dan kirim ulang Formulir anda!</p>
@@ -20,20 +24,86 @@
                                 @csrf
                                 <button type="submit" class="btn btn-outline-success font-weight-bold col-12">Klik disini untuk kirim formulir sekarang</button>
                             </form>
-                        @endif
+                        </div>
+                    </div>
+                @endif
+            @else
+                @if ($user->verified->count())
+                    @if ($user->verified->last()->verify_status_id == 1)
+                        <div class="row">
+                            <div class="alert alert-default-info text-center col-lg-8 mx-auto">
+                                <h3>Selamat! formulir anda telah divalidasi lengkap</h3>
+                            </div>
+                        </div>
+                    @endif
+                    @if ($user->verified->last()->verify_status_id == 2)
+                        <div class="row">
+                            <div class="alert alert-default-info text-center col-lg-8 mx-auto">
+                                <h3>Berkas anda telah dikirim, selanjutnya akan di informasihkan jika sdh diverifikasi.</h3>
+                            </div>
+                        </div>
                     @endif
                 @else
-                    @if ($user->verified->count())
-                        @if ($user->verified->last()->verify_status_id == 1)
-                            <h3>Selamat! formulir anda telah divalidasi lengkap</h3>
-                        @endif
-                    @else
-                        <h3>Berkas anda telah dikirim, selanjutnya akan di informasihkan jika sdh diverifikasi.</h3>
-                    @endif
+                    <div class="row">
+                        <div class="alert alert-default-info text-center col-lg-8 mx-auto">
+                            <h3>Berkas anda telah dikirim, selanjutnya akan di informasihkan jika sdh diverifikasi.</h3>
+                        </div>
+                    </div>
                 @endif
-            </div>
-        </div>
+            @endif
+        @endif
     @endif
+
+    {{-- @if ($lengkap)
+        @if (!$user->kirim)
+            @if ($user->verified->count() == null)
+                @if ($user->validasiPersyaratan())
+                    <div class="row">
+                        <div class="alert alert-default-info col-lg-8 mx-auto">
+                            <h3>Data anda sudah lengkap, apakah anda ingin mengirimkan formulir anda untuk diverifikasi?</h3>
+                            <p class="text-muted font-italic"><span class="text-danger text-bold">Peringatan</span> : jika ada yang ingin di perbaiki silahkan lakukan perbaikan. karena data yang sudah dikirim tidak dapat di ubah lagi tanpa persetujuan tim verifikator!</p>
+                            <form action="{{ route('peserta.kirim.formulir') }}" method="post">
+                                @csrf
+                                <button type="submit" class="btn btn-outline-success font-weight-bold col-12">Klik disini untuk kirim formulir sekarang</button>
+                            </form>
+                        </div>
+                    </div>
+                @endif
+            @else
+                @if ($user->verified->last()->verify_status_id == 2)
+                    <div class="row">
+                        <div class="alert alert-default-info col-lg-8 mx-auto">
+                            <h3>Maaf! formulir anda telah divalidasi tidak lengkap</h3>
+                            <p>Berikut Catatan Verifikator{!! $user->verified->last()->keterangan !!}</p>
+                            <p class="text-muted font-italic">Segera lakukan perbaikan dan kirim ulang Formulir anda!</p>
+                            <form action="{{ route('peserta.kirim.formulir') }}" method="post">
+                                @csrf
+                                <button type="submit" class="btn btn-outline-success font-weight-bold col-12">Klik disini untuk kirim formulir sekarang</button>
+                            </form>
+                        </div>
+                    </div>
+                @endif
+            @endif
+        @else
+            @if ($user->verified->count())
+                @if ($user->verified->last()->verify_status_id == 1)
+                    <div class="row">
+                        <div class="alert alert-default-info col-lg-8 mx-auto">
+                            <h3>Selamat! formulir anda telah divalidasi lengkap</h3>
+                        </div>
+                    </div>
+                @endif
+            @else
+                <div class="row">
+                    <div class="alert alert-default-info col-lg-8 mx-auto">
+                        <h3>Berkas anda telah dikirim, selanjutnya akan di informasihkan jika sdh diverifikasi.</h3>
+                    </div>
+                </div>
+            @endif
+        @endif
+    @endif --}}
+
+
     <div class="row">
         <div class="col-lg-3">
             <!-- Profile Image -->
@@ -150,7 +220,7 @@
                         <li class="list-group-item">
                             <b>Foto Rekening</b>
                             @if ($user->foto_rekening)
-                                @if (Storage::disk('data')->exists($user->directory . '/rekening/' . $user->foto_rekening))
+                                @if ($user->checkPersyaratan($user->directory, 'rekening', $user->rekening))
                                     <a href="{{ asset('data/' . $user->directory . '/rekening/' . $user->foto_rekening) }}" class="float-right" target="_blank"><i class="fas fa-check-circle" style="color: #005eff;"></i> Sudah upload</a>
                                 @else
                                     <span class="float-right text-danger text-bold"><i class="fas fa-times-circle" style="color: #ff0000;"></i> Belum upload!</span>
@@ -596,7 +666,7 @@
 
                                     <td class="text-center">1.</td>
                                     <td>
-                                        @if (Storage::disk('data')->exists($user->directory . '/foto_peserta/' . $user->foto_peserta))
+                                        @if ($user->checkPersyaratan($user->directory, 'foto_peserta', $user->foto_peserta))
                                             <a href="{{ asset('data/' . $user->directory . '/foto_peserta/' . $user->foto_peserta) }}" target="_blank">
                                                 Foto Peserta 4 X 6 (foto/gambar | *.jpg *.jpeg *.png)
                                             </a>
@@ -608,7 +678,7 @@
                                         @enderror
                                     </td>
                                     <td class="text-center">
-                                        @if (Storage::disk('data')->exists($user->directory . '/foto_peserta/' . $user->foto_peserta))
+                                        @if ($user->checkPersyaratan($user->directory, 'foto_peserta', $user->foto_peserta))
                                             <i class="far fa-check-circle fa-2x" style="color: #005eff;"></i> <span class="text-primary">Sudah upload</span>
                                         @else
                                             <i class="far fa-times-circle fa-2x" style="color: #ff0000;"></i> <span class="text-danger">Belum upload</span>
@@ -628,7 +698,7 @@
 
                                     <td class="text-center">1.</td>
                                     <td>
-                                        @if (Storage::disk('data')->exists($user->directory . '/file_ktp/' . $user->file_ktp))
+                                        @if ($user->checkPersyaratan($user->directory, 'file_ktp', $user->file_ktp))
                                             <a href="{{ asset('data/' . $user->directory . '/file_ktp/' . $user->file_ktp) }}" target="_blank">
                                                 KTP Peserta (foto/pdf)
                                             </a>
@@ -640,7 +710,7 @@
                                         @enderror
                                     </td>
                                     <td class="text-center">
-                                        @if (Storage::disk('data')->exists($user->directory . '/file_ktp/' . $user->file_ktp))
+                                        @if ($user->checkPersyaratan($user->directory, 'file_ktp', $user->file_ktp))
                                             <i class="far fa-check-circle fa-2x" style="color: #005eff;"></i> <span class="text-primary">Sudah upload</span>
                                         @else
                                             <i class="far fa-times-circle fa-2x" style="color: #ff0000;"></i> <span class="text-danger">Belum upload</span>
@@ -659,7 +729,7 @@
                                 <tr class="align-middle @error('file_kk') alert-default-info @enderror">
                                     <td class="text-center">2.</td>
                                     <td>
-                                        @if (Storage::disk('data')->exists($user->directory . '/file_kk/' . $user->file_kk))
+                                        @if ($user->checkPersyaratan($user->directory, 'file_kk', $user->file_kk))
                                             <a href="{{ asset('data/' . $user->directory . '/file_kk/' . $user->file_kk) }}" target="_blank">
                                                 Kartu Keluarga (foto/pdf)
                                             </a>
@@ -671,7 +741,7 @@
                                         @enderror
                                     </td>
                                     <td class="text-center">
-                                        @if (Storage::disk('data')->exists($user->directory . '/file_kk/' . $user->file_kk))
+                                        @if ($user->checkPersyaratan($user->directory, 'file_kk', $user->file_kk))
                                             <i class="far fa-check-circle fa-2x" style="color: #005eff;"></i> <span class="text-primary">Sudah upload</span>
                                         @else
                                             <i class="far fa-times-circle fa-2x" style="color: #ff0000;"></i> <span class="text-danger">Belum upload</span>
@@ -690,7 +760,7 @@
                                 <tr class="align-middle @error('file_kpm') alert-default-info @enderror">
                                     <td class="text-center">3.</td>
                                     <td>
-                                        @if (Storage::disk('data')->exists($user->directory . '/file_kpm/' . $user->file_kpm))
+                                        @if ($user->checkPersyaratan($user->directory, 'file_kpm', $user->file_kpm))
                                             <a href="{{ asset('data/' . $user->directory . '/file_kpm/' . $user->file_kpm) }}" target="_blank">
                                                 Kartu Pengenal Mahasiswa (foto/pdf)
                                             </a>
@@ -702,7 +772,7 @@
                                         @enderror
                                     </td>
                                     <td class="text-center">
-                                        @if (Storage::disk('data')->exists($user->directory . '/file_kpm/' . $user->file_kpm))
+                                        @if ($user->checkPersyaratan($user->directory, 'file_kpm', $user->file_kpm))
                                             <i class="far fa-check-circle fa-2x" style="color: #005eff;"></i> <span class="text-primary">Sudah upload</span>
                                         @else
                                             <i class="far fa-times-circle fa-2x" style="color: #ff0000;"></i> <span class="text-danger">Belum upload</span>
@@ -721,7 +791,7 @@
                                 <tr class="align-middle @error('file_khs') alert-default-info @enderror">
                                     <td class="text-center">4.</td>
                                     <td>
-                                        @if (Storage::disk('data')->exists($user->directory . '/file_khs/' . $user->file_khs))
+                                        @if ($user->checkPersyaratan($user->directory, 'file_khs', $user->file_khs))
                                             <a href="{{ asset('data/' . $user->directory . '/file_khs/' . $user->file_khs) }}" target="_blank">
                                                 Kartu Hasil Studi (foto/pdf)
                                             </a>
@@ -733,7 +803,7 @@
                                         @enderror
                                     </td>
                                     <td class="text-center">
-                                        @if (Storage::disk('data')->exists($user->directory . '/file_khs/' . $user->file_khs))
+                                        @if ($user->checkPersyaratan($user->directory, 'file_khs', $user->file_khs))
                                             <i class="far fa-check-circle fa-2x" style="color: #005eff;"></i> <span class="text-primary">Sudah upload</span>
                                         @else
                                             <i class="far fa-times-circle fa-2x" style="color: #ff0000;"></i> <span class="text-danger">Belum upload</span>
@@ -752,7 +822,7 @@
                                 <tr class="align-middle @error('file_krs') alert-default-info @enderror">
                                     <td class="text-center">5.</td>
                                     <td>
-                                        @if (Storage::disk('data')->exists($user->directory . '/file_krs/' . $user->file_krs))
+                                        @if ($user->checkPersyaratan($user->directory, 'file_krs', $user->file_krs))
                                             <a href="{{ asset('data/' . $user->directory . '/file_krs/' . $user->file_krs) }}" target="_blank">
                                                 Kartu Rencana Studi (foto/pdf)
                                             </a>
@@ -764,7 +834,7 @@
                                         @enderror
                                     </td>
                                     <td class="text-center">
-                                        @if (Storage::disk('data')->exists($user->directory . '/file_krs/' . $user->file_krs))
+                                        @if ($user->checkPersyaratan($user->directory, 'file_krs', $user->file_krs))
                                             <i class="far fa-check-circle fa-2x" style="color: #005eff;"></i> <span class="text-primary">Sudah upload</span>
                                         @else
                                             <i class="far fa-times-circle fa-2x" style="color: #ff0000;"></i> <span class="text-danger">Belum upload</span>
@@ -783,7 +853,7 @@
                                 <tr class="align-middle @error('file_surat_aktif') alert-default-info @enderror">
                                     <td class="text-center">6.</td>
                                     <td>
-                                        @if (Storage::disk('data')->exists($user->directory . '/file_surat_aktif/' . $user->file_surat_aktif))
+                                        @if ($user->checkPersyaratan($user->directory, 'file_surat_aktif', $user->file_surat_aktif))
                                             <a href="{{ asset('data/' . $user->directory . '/file_surat_aktif/' . $user->file_surat_aktif) }}" target="_blank">
                                                 Surat Keterangan Aktif Kuliah Dari Kampus (foto/pdf)
                                             </a>
@@ -795,7 +865,7 @@
                                         @enderror
                                     </td>
                                     <td class="text-center">
-                                        @if (Storage::disk('data')->exists($user->directory . '/file_surat_aktif/' . $user->file_surat_aktif))
+                                        @if ($user->checkPersyaratan($user->directory, 'file_surat_aktif', $user->file_surat_aktif))
                                             <i class="far fa-check-circle fa-2x" style="color: #005eff;"></i> <span class="text-primary">Sudah upload</span>
                                         @else
                                             <i class="far fa-times-circle fa-2x" style="color: #ff0000;"></i> <span class="text-danger">Belum upload</span>
@@ -814,7 +884,7 @@
                                 <tr class="align-middle @error('foto_kwitansi') alert-default-info @enderror">
                                     <td class="text-center">7.</td>
                                     <td>
-                                        @if (Storage::disk('data')->exists($user->directory . '/foto_kwitansi/' . $user->foto_kwitansi))
+                                        @if ($user->checkPersyaratan($user->directory, 'foto_kwitansi', $user->foto_kwitansi))
                                             <a href="{{ asset('data/' . $user->directory . '/foto_kwitansi/' . $user->foto_kwitansi) }}" target="_blank">
                                                 Kwitansi Pembayaran SPP Terakhir (foto/pdf)
                                             </a>
@@ -826,7 +896,7 @@
                                         @enderror
                                     </td>
                                     <td class="text-center">
-                                        @if (Storage::disk('data')->exists($user->directory . '/foto_kwitansi/' . $user->foto_kwitansi))
+                                        @if ($user->checkPersyaratan($user->directory, 'foto_kwitansi', $user->foto_kwitansi))
                                             <i class="far fa-check-circle fa-2x" style="color: #005eff;"></i> <span class="text-primary">Sudah upload</span>
                                         @else
                                             <i class="far fa-times-circle fa-2x" style="color: #ff0000;"></i> <span class="text-danger">Belum upload</span>
@@ -845,7 +915,7 @@
                                 <tr class="align-middle @error('foto_dikti') alert-default-info @enderror">
                                     <td class="text-center">8.</td>
                                     <td>
-                                        @if (Storage::disk('data')->exists($user->directory . '/foto_dikti/' . $user->foto_dikti))
+                                        @if ($user->checkPersyaratan($user->directory, 'foto_dikti', $user->foto_dikti))
                                             <a href="{{ asset('data/' . $user->directory . '/foto_dikti/' . $user->foto_dikti) }}" target="_blank">
                                                 Screenshot Data Mahasiswa Dari Forlap Dikti (foto/pdf)
                                             </a>
@@ -857,7 +927,7 @@
                                         @enderror
                                     </td>
                                     <td class="text-center">
-                                        @if (Storage::disk('data')->exists($user->directory . '/foto_dikti/' . $user->foto_dikti))
+                                        @if ($user->checkPersyaratan($user->directory, 'foto_dikti', $user->foto_dikti))
                                             <i class="far fa-check-circle fa-2x" style="color: #005eff;"></i> <span class="text-primary">Sudah upload</span>
                                         @else
                                             <i class="far fa-times-circle fa-2x" style="color: #ff0000;"></i> <span class="text-danger">Belum upload</span>

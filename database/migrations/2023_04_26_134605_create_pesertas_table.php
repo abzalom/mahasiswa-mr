@@ -96,15 +96,15 @@ return new class extends Migration
             $table->string('foto_rekening')->nullable();
 
             // Persyaratan Peserta
-            $table->string('foto_peserta')->nullable();
-            $table->string('file_ktp')->nullable();
-            $table->string('file_kk')->nullable();
-            $table->string('file_kpm')->nullable();
-            $table->string('file_khs')->nullable();
-            $table->string('file_krs')->nullable();
-            $table->string('file_surat_aktif')->nullable();
-            $table->string('foto_kwitansi')->nullable();
-            $table->string('foto_dikti')->nullable();
+            $table->string('foto_peserta')->nullable()->default('foto_peserta');
+            $table->string('file_ktp')->nullable()->default('file_ktp');
+            $table->string('file_kk')->nullable()->default('file_kk');
+            $table->string('file_kpm')->nullable()->default('file_kpm');
+            $table->string('file_khs')->nullable()->default('file_khs');
+            $table->string('file_krs')->nullable()->default('file_krs');
+            $table->string('file_surat_aktif')->nullable()->default('file_surat_aktif');
+            $table->string('foto_kwitansi')->nullable()->default('foto_kwitansi');
+            $table->string('foto_dikti')->nullable()->default('foto_dikti');
 
             $table->boolean('kirim')->default(false);
             $table->boolean('tim')->default(false);

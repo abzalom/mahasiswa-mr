@@ -19,9 +19,15 @@ class PesertaSeeder extends Seeder
 
         Peserta::truncate();
         $peserta = Peserta::create($data);
-
         $peserta->assignRole('peserta');
-        // foreach ($data as $value) {
-        // }
+
+        $pesertas = Peserta::factory()->count(5)->create();
+
+        foreach ($pesertas as $value) {
+            $value->directory = 'peserta/peserta_dengan_id_' . $value->id;
+            $value->file_name = '_peserta_dengan_id_' . $value->id;
+            $value->assignRole('peserta');
+            $value->save();
+        }
     }
 }
