@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
             StatusOrtuSeeder::class,
             VerifyStatusSeeder::class,
             RolesAndPermissionsSeeder::class,
-            PesertaSeeder::class,
+            // PesertaSeeder::class,
         ]);
     }
 }

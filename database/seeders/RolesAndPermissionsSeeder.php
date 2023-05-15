@@ -54,44 +54,44 @@ class RolesAndPermissionsSeeder extends Seeder
         $role4 = Role::create(['guard_name' => 'peserta', 'name' => 'peserta']);
         // $role5->givePermissionTo('edit formulir');
 
-        $user = User::create([
-            'name' => 'admin',
-            'username' => 'admin',
-            'email' => 'admin@email.com',
-            'email_verified_at' => now(),
-            'phone' => fake()->phoneNumber(),
-            'phone_verified_at' => now(),
-            'password' => Hash::make('admin'),
-            'remember_token' => Str::random(10),
-        ]);
+        // $user = User::create([
+        //     'name' => 'admin',
+        //     'username' => 'admin',
+        //     'email' => 'admin@email.com',
+        //     'email_verified_at' => now(),
+        //     'phone' => fake()->phoneNumber(),
+        //     'phone_verified_at' => now(),
+        //     'password' => Hash::make('admin'),
+        //     'remember_token' => Str::random(10),
+        // ]);
 
-        $user->assignRole($role1);
+        // $user->assignRole($role1);
 
-        $user = User::create([
-            'name' => 'koordinator',
-            'username' => 'koordinator',
-            'email' => 'koordinator@email.com',
-            'email_verified_at' => now(),
-            'phone' => fake()->phoneNumber(),
-            'phone_verified_at' => now(),
-            'password' => Hash::make('password'),
-            'remember_token' => Str::random(10),
-        ]);
+        // $user = User::create([
+        //     'name' => 'koordinator',
+        //     'username' => 'koordinator',
+        //     'email' => 'koordinator@email.com',
+        //     'email_verified_at' => now(),
+        //     'phone' => fake()->phoneNumber(),
+        //     'phone_verified_at' => now(),
+        //     'password' => Hash::make('password'),
+        //     'remember_token' => Str::random(10),
+        // ]);
 
-        $user->assignRole($role2);
+        // $user->assignRole($role2);
 
-        $user = User::create([
-            'name' => 'roy sesa',
-            'username' => 'roy.sesa',
-            'email' => 'roy@email.com',
-            'email_verified_at' => now(),
-            'phone' => fake()->phoneNumber(),
-            'phone_verified_at' => now(),
-            'password' => Hash::make('password'),
-            'remember_token' => Str::random(10),
-        ]);
+        // $user = User::create([
+        //     'name' => 'roy sesa',
+        //     'username' => 'roy.sesa',
+        //     'email' => 'roy@email.com',
+        //     'email_verified_at' => now(),
+        //     'phone' => fake()->phoneNumber(),
+        //     'phone_verified_at' => now(),
+        //     'password' => Hash::make('password'),
+        //     'remember_token' => Str::random(10),
+        // ]);
 
-        $user->assignRole($role3);
+        // $user->assignRole($role3);
 
         // $user = User::create([
         //     'name' => 'viktor ginuni',
