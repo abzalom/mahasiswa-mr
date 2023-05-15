@@ -14,5 +14,10 @@ class PesertaSeeder extends Seeder
      */
     public function run(): void
     {
+        $pesertas = Peserta::factory()->count(5)->create();
+
+        foreach ($pesertas as $peserta) {
+            $peserta->assignRole('peserta');
+        }
     }
 }

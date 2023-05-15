@@ -105,7 +105,7 @@ class VerifikatorController extends Controller
         $fileName = auth()->user()->id . '_' . auth()->user()->username . '.' . $file->getClientOriginalExtension();
         if ($file->storeAs('images', $fileName)) {
             $thumb = Image::make($file);
-            $thumb->resize(128, 128, function ($constraint) {
+            $thumb->resize(40, 40, function ($constraint) {
                 $constraint->aspectRatio();
             });
             $thumb->save('images/thumbnails/' . $fileName);

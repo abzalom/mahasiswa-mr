@@ -11,10 +11,10 @@
         <!-- Sidebar user (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="/vendors/adminlte3/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                <img src="{{ auth()->user()->photo() }}" class="img-circle elevation-2 bg-white" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">{{ auth()->user()->username }}</a>
+                <a href="{{ route('admin.profile') }}" class="d-block">{{ auth()->user()->username }}</a>
             </div>
         </div>
 
@@ -61,6 +61,18 @@
                             <a href="{{ route('admin.config.roles') }}" class="nav-link {{ Request::is('admin/config/roles') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Roles & Permision</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.config.banks') }}" class="nav-link {{ Request::is('admin/config/banks') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Bank</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.config.pejabats') }}" class="nav-link {{ Request::is('admin/config/pejabats') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Pejabat</p>
                             </a>
                         </li>
                     </ul>

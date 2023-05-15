@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\ConfigController;
 use App\Http\Controllers\Admin\ManajemenUserController;
 use App\Http\Controllers\Koordinator\KoordinatorController;
 use App\Http\Controllers\Peserta\PesertaController;
@@ -52,14 +53,35 @@ Route::controller(UploadBerkasController::class)->middleware(['auth:peserta', 'v
 
 Route::controller(AdminController::class)->middleware(['auth:web', 'verified', 'role:admin'])->group(function () {
     Route::get('/admin/dashboard', 'dashboard')->name('admin.dashboard');
+    Route::get('/admin/profile', 'profile')->name('admin.profile');
+    Route::post('/admin/profile', 'updateprofile');
     Route::get('/admin/set/panitia', 'createpanitia')->name('admin.set.panitia');
 
     // Configurations
     Route::get('/admin/config/roles', 'createroles')->name('admin.config.roles');
+    Route::get('/admin/config/banks', 'createbanks')->name('admin.config.banks');
+    Route::get('/admin/config/pejabats', 'createpejabats')->name('admin.config.pejabats');
+});
+
+
+Route::controller(ConfigController::class)->middleware(['auth:web', 'verified', 'role:admin'])->group(function () {
+    Route::post('/admin/config/roles', 'saveroles');
+    Route::post('/admin/update/roles', 'updateroles')->name('admin.update.roles');
+    Route::post('/admin/destroy/roles', 'destroyroles')->name('admin.destroy.roles');
+    Route::post('/admin/config/banks', 'savebanks');
+    Route::post('/admin/update/banks', 'updatebanks')->name('admin.update.banks');
+    Route::post('/admin/destroy/banks', 'destroybanks')->name('admin.destroy.banks');
+    Route::post('/admin/config/pejabats', 'savepejabats');
+    Route::post('/admin/update/pejabats', 'updatepejabats')->name('admin.update.pejabats');
+    Route::post('/admin/destroy/pejabats', 'destroypejabats')->name('admin.destroy.pejabats');
 });
 
 Route::controller(ManajemenUserController::class)->middleware(['auth:web', 'verified', 'role:admin|koordinator'])->group(function () {
     Route::post('/admin/set/panitia', 'adminstorepanitia')->name('admin.store.panitia');
+    Route::post('/admin/edit/panitia', 'editpanitia')->name('admin.edit.panitia');
+    Route::post('/admin/lock/panitia', 'lockpanitia')->name('admin.lock.panitia');
+    Route::post('/admin/unlock/panitia', 'unlockpanitia')->name('admin.unlock.panitia');
+
 
     // Koordinator
     Route::post('/koordinator/set/panitia', 'koordinatorstorepanitia')->name('koordinator.set.panitia');
@@ -67,6 +89,7 @@ Route::controller(ManajemenUserController::class)->middleware(['auth:web', 'veri
     // API
     Route::post('/koordinator/api/panitia', 'koordinatorapipanitia');
 });
+
 
 Route::controller(KoordinatorController::class)->middleware(['auth:web', 'verified', 'role:koordinator'])->group(function () {
     Route::get('/koordinator/dashboard', 'dashboard')->name('koordinator.dashboard');
@@ -109,6 +132,7 @@ Route::controller(PrintController::class)->middleware(['auth:web', 'verified', '
     Route::get('formulir/cetak/peserta/{id}', 'formulircetak')->name('formulir.cetak.peserta');
 });
 
+require __DIR__ . '/api.php';
 require __DIR__ . '/redirect.php';
 require __DIR__ . '/akses.php';
 require __DIR__ . '/admin.php';

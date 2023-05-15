@@ -65,7 +65,7 @@ class User extends Authenticatable implements MustVerifyEmail
         if ($this->image) {
             return asset('/images/thumbnails/' . $this->image);
         } else {
-            return  asset('/assets/img/side_bar_icon.svg');
+            return  asset('/assets/img/user.svg');
         }
     }
 

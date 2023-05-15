@@ -4,7 +4,7 @@ $(document).ready(function () {
             theme: 'bootstrap4',
             multiple: true,
             allowClear: true,
-            // closeOnSelect: true,
+            closeOnSelect: true,
             placeholder: {
                 text: $(this).data('placeholder'),
             },
@@ -28,7 +28,7 @@ $(document).ready(function () {
         "lengthChange": false,
         "autoWidth": false,
         "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    })
 
     $('.edit-panitia-button').each(function () {
         $(this).on('click', function () {
@@ -61,4 +61,25 @@ $(document).ready(function () {
     $('#edit-peserta-button').on('click', function () {
         $('#edit-user-id').val($(this).val());
     })
+
+    $('#guardName').on('change', function () {
+        val = $(this).val();
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            type: "post",
+            url: "/api/permission/guard",
+            data: {
+                guard_name: val
+            },
+            dataType: "JSON",
+            success: function (response) {
+                $('#permissionName').html('');
+                $.each(response, function (permisIndex, permisVal) {
+                    $('#permissionName').append('<option value="' + permisVal.name + '">' + permisVal.name + '</option>')
+                });
+            }
+        });
+    });
 });
