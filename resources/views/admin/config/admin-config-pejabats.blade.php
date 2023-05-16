@@ -65,7 +65,7 @@
         <div class="col-md-4">
             <!-- Default box -->
             <div class="card">
-                <div class="card-header bg-gradient-secondary">
+                <div class="card-header {{ $getOnePejabat ? 'bg-gradient-warning' : 'bg-gradient-secondary' }}">
                     <h3 class="card-title">Olah Data Pejabat</h3>
                 </div>
                 <div class="card-body">

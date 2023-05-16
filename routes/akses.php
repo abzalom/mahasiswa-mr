@@ -3,6 +3,7 @@
 use App\Http\Controllers\Akses\AuthenticationSessionController;
 use App\Http\Controllers\Akses\EmailVerificationPromptController;
 use App\Http\Controllers\Akses\EmailVerificationResendController;
+use App\Http\Controllers\Akses\ForgetPasswordController;
 use App\Http\Controllers\Akses\RegisterUserController;
 use App\Http\Controllers\Akses\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
@@ -12,6 +13,11 @@ Route::middleware('guest:peserta')->group(function () {
         ->name('auth.login');
 
     Route::post('/auth/login', [AuthenticationSessionController::class, 'store'])->name('auth.dologin');
+
+    Route::get('/auth/forget-password', [ForgetPasswordController::class, 'create'])
+        ->name('auth.forget.password');
+
+    Route::post('/auth/forget-password', [ForgetPasswordController::class, 'sendtoken']);
 });
 
 Route::middleware('auth:peserta')->group(function () {

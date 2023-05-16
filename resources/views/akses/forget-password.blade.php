@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Beasiswa MR | Login</title>
+    <title>Beasiswa MR | Forget Password</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -21,13 +21,12 @@
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="/auth/login" class="h1"><b>Login Peserta</b></a>
+                <b class="h1">Reset Password</b>
             </div>
             <div class="card-body">
-                <p class="login-box-msg mb-0 pb-0">Login untuk mengisi formulir</p>
-                <p class="login-box-msg text-bold">Beasiswa Pemda</p>
+                <p class="login-box-msg mb-3 pb-0">Masukan email anda untuk mengirimkan token reset password</p>
 
-                <form action="{{ route('auth.dologin') }}" method="post">
+                <form action="{{ route('auth.forget.password') }}" method="post">
                     @csrf
                     @error('email')
                         <small id="emailHelp" class="form-text text-danger text-bold">{{ $message }}</small>
@@ -40,43 +39,15 @@
                             </div>
                         </div>
                     </div>
-                    @error('password')
-                        <small id="emailHelp" class="form-text text-danger text-bold">{{ $message }}</small>
-                    @enderror
-                    <div class="input-group mb-3">
-                        <input type="password" name="password" class="form-control" placeholder="Password">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="icheck-primary">
-                                <input type="checkbox" name="remember" id="remember" value="true">
-                                <label for="remember">
-                                    Remember Me
-                                </label>
-                            </div>
-                        </div>
+                    <div class="row mb-2">
                         <!-- /.col -->
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+                        <div class="col-sm">
+                            <button type="submit" class="btn btn-primary btn-block">Kirim</button>
                         </div>
                         <!-- /.col -->
                     </div>
                 </form>
 
-                <p class="mb-1">
-                    <a href="/auth/forget-password">Saya lupa password</a>
-                </p>
-                <p class="mb-2">
-                    <a href="/auth/register" class="text-center">Belum punya akun? daftar disini</a>
-                </p>
-                <p class="mb-0 text-right">
-                    <a href="/admin/login" class="text-center">Panitia? Login disini</a>
-                </p>
             </div>
             <!-- /.card-body -->
         </div>

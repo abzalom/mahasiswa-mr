@@ -1,18 +1,19 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin\Config;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use App\Http\Requests\StoreBankRequest;
 use App\Http\Requests\StoreJabatanRequest;
 use App\Models\Bank;
 use App\Models\Jabatan;
 use App\Models\Peserta;
 use App\Models\User;
-use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 
-class ConfigController extends Controller
+
+class AdminConfigProcessController extends Controller
 {
     public function saveroles(Request $request)
     {

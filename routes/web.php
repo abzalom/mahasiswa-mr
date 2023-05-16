@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\Config\AdminConfigController;
+use App\Http\Controllers\Admin\Config\AdminConfigProcessController;
 use App\Http\Controllers\Admin\ConfigController;
 use App\Http\Controllers\Admin\ManajemenUserController;
 use App\Http\Controllers\Koordinator\KoordinatorController;
@@ -56,15 +58,17 @@ Route::controller(AdminController::class)->middleware(['auth:web', 'verified', '
     Route::get('/admin/profile', 'profile')->name('admin.profile');
     Route::post('/admin/profile', 'updateprofile');
     Route::get('/admin/set/panitia', 'createpanitia')->name('admin.set.panitia');
+});
 
+Route::controller(AdminConfigController::class)->middleware(['auth:web', 'verified', 'role:admin'])->group(function () {
     // Configurations
     Route::get('/admin/config/roles', 'createroles')->name('admin.config.roles');
     Route::get('/admin/config/banks', 'createbanks')->name('admin.config.banks');
     Route::get('/admin/config/pejabats', 'createpejabats')->name('admin.config.pejabats');
+    Route::get('/admin/config/components', 'createcomponents')->name('admin.config.components');
 });
 
-
-Route::controller(ConfigController::class)->middleware(['auth:web', 'verified', 'role:admin'])->group(function () {
+Route::controller(AdminConfigProcessController::class)->middleware(['auth:web', 'verified', 'role:admin'])->group(function () {
     Route::post('/admin/config/roles', 'saveroles');
     Route::post('/admin/update/roles', 'updateroles')->name('admin.update.roles');
     Route::post('/admin/destroy/roles', 'destroyroles')->name('admin.destroy.roles');

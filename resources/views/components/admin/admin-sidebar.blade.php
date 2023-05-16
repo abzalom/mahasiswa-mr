@@ -75,6 +75,12 @@
                                 <p>Pejabat</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.config.components') }}" class="nav-link {{ Request::is('admin/config/components') ? 'active' : (Request::is('admin/config/components/*') ? 'active' : '') }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>App Component</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>
