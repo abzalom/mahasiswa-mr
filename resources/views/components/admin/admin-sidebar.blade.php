@@ -66,7 +66,7 @@
                         <li class="nav-item">
                             <a href="{{ route('admin.config.banks') }}" class="nav-link {{ Request::is('admin/config/banks') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Bank</p>
+                                <p>Data Bank</p>
                             </a>
                         </li>
                         <li class="nav-item">

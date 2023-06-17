@@ -15,7 +15,29 @@
 
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
-                <!-- Notifications Dropdown Menu -->
+                <!-- Tahun Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        Tahun {{ session()->get('tahun') }}
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                        <span class="dropdown-header p-0">Pilih tahun</span>
+                        <div class="dropdown-divider"></div>
+                        @foreach ($tahuns as $tahun)
+                            <form action="/config/app/session/tahun" method="post">
+                                @csrf
+                                <input type="hidden" name="idtahun" value="{{ $tahun->id }}">
+                                <button type="submit" class="dropdown-item">
+                                    Tahun {{ $tahun->tahun }}&nbsp;
+                                    @if (session()->get('tahun') == $tahun->tahun)
+                                        <i class="fas fa-check"></i>
+                                    @endif
+                                </button>
+                            </form>
+                        @endforeach
+                    </div>
+                </li>
+                <!-- User Dropdown Menu -->
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
                         {{ auth()->user()->username }} <i class="fas fa-user-cog" style="color: #5c652d;"></i>

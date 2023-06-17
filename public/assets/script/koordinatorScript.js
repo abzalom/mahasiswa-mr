@@ -54,4 +54,13 @@ $(document).ready(function () {
     $('#edit-peserta-button').on('click', function () {
         $('#edit-user-id').val($(this).val());
     })
+
+
+    $('.edit-verified-peserta').on('click', function () {
+        userid = $(this).data('userid');
+        verifikator = $(this).data('verifikator');
+        $('#edit-verfied-peserta').val(userid)
+        $('#edit-verfied-verifikator').val(verifikator)
+    })
+
 });

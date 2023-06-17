@@ -9,6 +9,18 @@ use App\Models\Peserta;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 use App\Http\Controllers\Controller;
+use App\Models\JalurMasuk;
+use App\Models\JenisPt;
+use App\Models\Jenjang;
+use App\Models\KetOrtu;
+use App\Models\Pekerjaan;
+use App\Models\Pendidikan;
+use App\Models\Penghasilan;
+use App\Models\Semester;
+use App\Models\StatusAwalMahasiswa;
+use App\Models\StatusMahasiswa;
+use App\Models\StatusOrtu;
+use App\Models\Tahun;
 use Spatie\Permission\Models\Permission;
 
 class AdminConfigController extends Controller
@@ -51,7 +63,7 @@ class AdminConfigController extends Controller
             'permissions' => $permissions,
             'edit' => $edit,
             'web' => [
-                'title' => 'Admin Panel',
+                'title' => 'Configurasi | Admin',
                 'desc' => 'Config Role and Permission',
             ],
         ]);
@@ -72,7 +84,7 @@ class AdminConfigController extends Controller
             'banks' => $banks,
             'getOneBank' => $getOneBank,
             'web' => [
-                'title' => 'Admin Panel',
+                'title' => 'Configurasi | Admin',
                 'desc' => 'Config Data Bank',
             ],
         ]);
@@ -94,7 +106,7 @@ class AdminConfigController extends Controller
             'pejabats' => $pejabats,
             'getOnePejabat' => $getOnePejabat,
             'web' => [
-                'title' => 'Admin Panel',
+                'title' => 'Configurasi | Admin',
                 'desc' => 'Config Data Pejabat',
             ],
         ]);
@@ -103,13 +115,86 @@ class AdminConfigController extends Controller
     /**
      * App Component
      */
-    public function createcomponents()
+    public function createcomponents(Request $request)
     {
+        $edittahun = null;
+        $editjalur = null;
+        $editjenispt = null;
+        $editjenjang = null;
+        $editketortu = null;
+        $editpekerjaan = null;
+        $editpendidikan = null;
+        $editpenghasilan = null;
+        $editsemester = null;
+        $editstatusawalmhs = null;
+        $editstatusmhs = null;
+        $editstatusortu = null;
+        if ($request->tahun) {
+            $edittahun = Tahun::find($request->tahun);
+        }
+        if ($request->jalur) {
+            $editjalur = JalurMasuk::find($request->jalur);
+        }
+        if ($request->jenispt) {
+            $editjenispt = JenisPt::find($request->jenispt);
+        }
+        if ($request->jenjang) {
+            $editjenjang = Jenjang::find($request->jenjang);
+        }
+        if ($request->ketortu) {
+            $editketortu = KetOrtu::find($request->ketortu);
+        }
+        if ($request->pekerjaan) {
+            $editpekerjaan = Pekerjaan::find($request->pekerjaan);
+        }
+        if ($request->pendidikan) {
+            $editpendidikan = Pendidikan::find($request->pendidikan);
+        }
+        if ($request->penghasilan) {
+            $editpenghasilan = Penghasilan::find($request->penghasilan);
+        }
+        if ($request->semester) {
+            $editsemester = Semester::find($request->semester);
+        }
+        if ($request->statusawalmhs) {
+            $editstatusawalmhs = StatusAwalMahasiswa::find($request->statusawalmhs);
+        }
+        if ($request->statusmhs) {
+            $editstatusmhs = StatusMahasiswa::find($request->statusmhs);
+        }
+        if ($request->statusortu) {
+            $editstatusortu = StatusOrtu::find($request->statusortu);
+        }
         return view('admin.config.admin-config-components', [
             'web' => [
-                'title' => 'Admin Panel',
-                'desc' => 'Config Data Pejabat',
+                'title' => 'Configurasi | Admin',
+                'desc' => 'Config Data Tambahan',
             ],
+            'tahuns' => Tahun::get(),
+            'jalurmasuks' => JalurMasuk::withTrashed()->get(),
+            'jenispts' => JenisPt::withTrashed()->get(),
+            'jenjangs' => Jenjang::withTrashed()->get(),
+            'ketortus' => KetOrtu::withTrashed()->get(),
+            'pekerjaans' => Pekerjaan::withTrashed()->get(),
+            'pendidikans' => Pendidikan::withTrashed()->get(),
+            'penghasilans' => Penghasilan::withTrashed()->get(),
+            'semesters' => Semester::withTrashed()->get(),
+            'statusawalmhss' => StatusAwalMahasiswa::withTrashed()->get(),
+            'statusmhss' => StatusMahasiswa::withTrashed()->get(),
+            'statusortus' => StatusOrtu::withTrashed()->get(),
+
+            'edittahun' => $edittahun,
+            'editjalur' => $editjalur,
+            'editjenispt' => $editjenispt,
+            'editjenjang' => $editjenjang,
+            'editketortu' => $editketortu,
+            'editpekerjaan' => $editpekerjaan,
+            'editpendidikan' => $editpendidikan,
+            'editpenghasilan' => $editpenghasilan,
+            'editsemester' => $editsemester,
+            'editstatusawalmhs' => $editstatusawalmhs,
+            'editstatusmhs' => $editstatusmhs,
+            'editstatusortu' => $editstatusortu,
         ]);
     }
 }

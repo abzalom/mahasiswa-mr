@@ -8,7 +8,11 @@ use App\Http\Requests\StoreBankRequest;
 use App\Http\Requests\StoreJabatanRequest;
 use App\Models\Bank;
 use App\Models\Jabatan;
+use App\Models\JalurMasuk;
+use App\Models\JenisPt;
+use App\Models\Jenjang;
 use App\Models\Peserta;
+use App\Models\Tahun;
 use App\Models\User;
 use Spatie\Permission\Models\Role;
 
@@ -147,5 +151,195 @@ class AdminConfigProcessController extends Controller
         $pejabat = Jabatan::find($request->id);
         $pejabat->delete();
         return back()->with('pesan', 'Data Pejabat telah di hapus!');
+    }
+
+    /**
+     * CONFIG COMPONENTS
+     */
+
+    function savecomponents(Request $request)
+    {
+        /**
+         * STORE TAHUN
+         */
+        if ($request->component == 'tahun') {
+            $request->validate(
+                [
+                    'tahun' => 'required|unique:jalur_masuks,nama|numeric|digits:4'
+                ],
+                [
+                    'tahun.required' => 'Tahun tidak boleh kosong',
+                    'tahun.unique' => 'Tahun sudah ada',
+                    'tahun.numeric' => 'Tahun harus berupa anggka',
+                    'tahun.digits' => 'Tahun maksimal 4 giti, Contoh: ' . now('Y'),
+                ]
+            );
+            Tahun::create([
+                'tahun' => $request->tahun,
+            ]);
+
+            return back()->with('pesan', 'Tahun ' . $request->tahun . ' telah ditambahkan');
+        }
+
+        /**
+         * STORE JALUR MASUK
+         */
+        if ($request->component == 'jalurmasuk') {
+            $request->validate(
+                [
+                    'jalurmasuk' => 'required|unique:jalur_masuks,nama'
+                ],
+                [
+                    'jalurmasuk.required' => 'Nama jalur masuk tidak boleh kosong',
+                    'jalurmasuk.unique' => 'Nama jalur masuk sudah ada',
+                ]
+            );
+            $jalurmasuk = JalurMasuk::create([
+                'nama' => str($request->jalurmasuk)->lower()
+            ]);
+
+            return back()->with('pesan', 'Jalur masuk telah ditambahkan');
+        }
+
+        /**
+         * STORE PERGURUAN TINGGI
+         */
+        if ($request->component == 'jenispt') {
+            $request->validate(
+                [
+                    'jenispt' => 'required|unique:jenis_pts,nama'
+                ],
+                [
+                    'jenispt.required' => 'Jenis Perguruan Tinggi tidak boleh kosong',
+                    'jenispt.unique' => 'Jenis Perguruan Tinggi sudah ada',
+                ]
+            );
+            JenisPt::create([
+                'nama' => $request->jenispt
+            ]);
+            return back()->with('pesan', 'Jenis Perguruan Tinggi telah ditambahkan');
+        }
+
+        /**
+         * STORE JENJANG
+         */
+        if ($request->component == 'jenjang') {
+            $request->validate(
+                [
+                    'jenjang' => 'required|unique:jenjangs,nama',
+                    'jjgtitle' => 'required|unique:jenjangs,singkat'
+                ],
+                [
+                    'jenjang.required' => 'Jenjang tidak boleh kosong',
+                    'jenjang.unique' => 'Jenjang sudah ada',
+                    'jjgtitle.required' => 'Title tidak boleh kosong',
+                    'jjgtitle.unique' => 'Title sudah ada',
+                ]
+            );
+            // return $request->all();
+            Jenjang::create([
+                'nama' => $request->jenjang,
+                'singkat' => str($request->jjgtitle)->upper(),
+            ]);
+            return back()->with('pesan', 'Jenjang telah ditambahkan');
+        }
+    }
+
+    function updatecomponents(Request $request)
+    {
+        /**
+         * UPDATE JALUR MASUK
+         */
+        if ($request->component == 'jalurmasuk') {
+            $jalurmasuk = JalurMasuk::find($request->idjalur);
+            $request->validate(
+                [
+                    'jalurmasuk' => 'required|unique:jalur_masuks,nama,' . $jalurmasuk->id,
+                ],
+                [
+                    'jalurmasuk.required' => 'Nama jalur masuk tidak boleh kosong',
+                    'jalurmasuk.unique' => 'Nama jalur masuk sudah ada',
+                ]
+            );
+            $jalurmasuk->nama = $request->jalurmasuk;
+            $jalurmasuk->save();
+            return to_route('admin.config.components')->with('pesan', 'Jalur masuk telah diupdate');
+        }
+
+        /**
+         * UPDATE PERGURUAN TINGGI
+         */
+        if ($request->component == 'jenispt') {
+            $jenispt = JenisPt::find($request->idjenispt);
+            $request->validate(
+                [
+                    'jenispt' => 'required|unique:jalur_masuks,nama,' . $jenispt->id,
+                ],
+                [
+                    'jenispt.required' => 'Nama jenis perguruan tinggi tidak boleh kosong',
+                    'jenispt.unique' => 'Nama jenis perguruan tinggi sudah ada',
+                ]
+            );
+            $jenispt->nama = $request->jenispt;
+            $jenispt->save();
+            return to_route('admin.config.components')->with('pesan', 'Jenis Perguruan Tinggi telah diupdate');
+        }
+
+        /**
+         * UPDATE JENJANG
+         */
+        if ($request->component == 'jenjang') {
+            $jenjang = Jenjang::find($request->idjenjang);
+            $request->validate(
+                [
+                    'jenjang' => 'required|unique:jenjangs,nama,' . $jenjang->id,
+                    'jjgtitle' => 'required|unique:jenjangs,singkat,' . $jenjang->id,
+                ],
+                [
+                    'jenjang.required' => 'Jenjang tidak boleh kosong',
+                    'jenjang.unique' => 'Jenjang sudah ada',
+                    'jjgtitle.required' => 'Title tidak boleh kosong',
+                    'jjgtitle.unique' => 'Title sudah ada',
+                ]
+            );
+            $jenjang->nama = $request->jenjang;
+            $jenjang->singkat = str($request->jjgtitle)->upper();
+            $jenjang->save();
+            return to_route('admin.config.components')->with('pesan', 'Jenis Perguruan Tinggi telah diupdate');
+        }
+    }
+
+    function destroycomponents(Request $request)
+    {
+        /**
+         * DESTORY JALUR MASUK
+         */
+        if ($request->component == 'jalurmasuk') {
+            $jalurmasuk = JalurMasuk::find($request->idjalur);
+            $jalurmasuk->delete();
+            return to_route('admin.config.components')->with('pesan', 'Jalur masuk telah dikunci');
+        }
+        if ($request->component == 'jenispt') {
+            $jenispt = JenisPt::find($request->idjenispt);
+            $jenispt->delete();
+            return to_route('admin.config.components')->with('pesan', 'Jenis Perguruan Tinggi telah dikunci');
+        }
+    }
+
+    function restorecomponents(Request $request)
+    {
+        /**
+         * RESTORE JALUR MASUK
+         */
+        if ($request->component == 'jalurmasuk') {
+            $jalurmasuk = JalurMasuk::onlyTrashed()->find($request->idjalur);
+            $jalurmasuk->restore();
+            return to_route('admin.config.components')->with('pesan', 'Jalur masuk telah dibuka');
+        }
+        if ($request->component == 'jenispt') {
+            $jenispt = JenisPt::onlyTrashed()->find($request->idjenispt);
+            $jenispt->restore();
+            return to_route('admin.config.components')->with('pesan', 'Jalur masuk telah dibuka');
+        }
     }
 }

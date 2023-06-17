@@ -21,15 +21,18 @@ class HomeController extends Controller
                 return redirect('/admin/dashboard');
             }
             if ($user->hasRole(['koordinator'])) {
+                session()->put('tahun', $this->tahun);
                 return redirect('/koordinator/dashboard');
             }
             if ($user->hasRole(['verifikator'])) {
+                session()->put('tahun', $this->tahun);
                 return redirect('/verifikator/dashboard');
             }
         }
         $peserta = Peserta::find(auth()->user()->id);
         if ($peserta) {
             if ($peserta->hasRole(['peserta'])) {
+                session()->put('tahun', $this->tahun);
                 return redirect('/peserta/dashboard');
             }
         }

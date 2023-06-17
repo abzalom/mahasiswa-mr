@@ -25,9 +25,7 @@ class AdminAuthSessionController extends Controller
     {
         // return $request;
         $request->authenticate();
-
-        $test = $request->session()->regenerate();
-
+        $request->session()->regenerate();
         return redirect()->intended('/');
     }
 

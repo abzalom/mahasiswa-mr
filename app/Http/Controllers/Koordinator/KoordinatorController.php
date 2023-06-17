@@ -145,6 +145,36 @@ class KoordinatorController extends Controller
         ]);
     }
 
+    public function editverifikatorpeserta(Request $request)
+    {
+        $old = PesertaUser::where([
+            'peserta_id' => $request->pesertaid,
+            'user_id' => $request->verifikatorid,
+        ])
+            ->firstOrFail();
+        $old->delete();
+        PesertaUser::create([
+            'peserta_id' => $request->pesertaid,
+            'user_id' => $request->userid,
+        ]);
+        $peserta = Peserta::find($request->pesertaid);
+        $user = User::find($request->userid);
+        return redirect()->back()->with('pesan', 'Verifikator untuk peserta ' . $peserta->nama . ' telah di update dengan verifikator ' . $user->name);
+    }
+
+    public function destroyverifikatorpeserta(Request $request)
+    {
+        $old = PesertaUser::where([
+            'peserta_id' => $request->peserta,
+            'user_id' => $request->panitia,
+        ])->firstOrFail();
+        $old->delete();
+        $peserta = Peserta::find($request->peserta);
+        $peserta->tim = false;
+        $peserta->save();
+        return redirect()->back()->with('pesan', 'Verifikator untuk peserta ' . $peserta->nama . ' telah dihapus');
+    }
+
     public function createpeserta()
     {
         $pesertas = Peserta::where('tim', false)->get();
@@ -191,13 +221,11 @@ class KoordinatorController extends Controller
     public function savepeserta(Request $request): RedirectResponse
     {
         $peserta = Peserta::find($request->pesertaid);
-        PesertaUser::where('peserta_id',  $request->pesertaid)->whereIn('user_id', $request->userid)->delete();
-        foreach ($request->userid as $user) {
-            PesertaUser::create([
-                'user_id' => $user,
-                'peserta_id' => $request->pesertaid,
-            ]);
-        }
+        PesertaUser::where('peserta_id',  $request->pesertaid)->where('user_id', $request->userid)->delete();
+        PesertaUser::create([
+            'user_id' => $request->userid,
+            'peserta_id' => $request->pesertaid,
+        ]);
         $peserta->tim = true;
         $peserta->save();
         return redirect()->back()->with('pesan', 'User dan Verifikator berhasil di update');

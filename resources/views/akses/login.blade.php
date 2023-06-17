@@ -56,7 +56,7 @@
                             <div class="icheck-primary">
                                 <input type="checkbox" name="remember" id="remember" value="true">
                                 <label for="remember">
-                                    Remember Me
+                                    Biarkan saya tetap login
                                 </label>
                             </div>
                         </div>
@@ -75,7 +75,7 @@
                     <a href="/auth/register" class="text-center">Belum punya akun? daftar disini</a>
                 </p>
                 <p class="mb-0 text-right">
-                    <a href="/admin/login" class="text-center">Panitia? Login disini</a>
+                    <a href="/admin/login" class="text-center">Anda panitia? Login disini</a>
                 </p>
             </div>
             <!-- /.card-body -->

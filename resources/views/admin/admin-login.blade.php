@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/vendors/adminlte3/dist/css/adminlte.min.css">
 </head>
 
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background-color: #a19fb0">
     <div class="login-box">
         <div class="login-logo">
             <b>Login Panitia</b>
@@ -24,7 +24,7 @@
         <!-- /.login-logo -->
         <div class="card rounded">
             <div class="card-body login-card-body">
-                <p class="login-box-msg">Panitia yang belum terdaftar agar dapat menghubungi koordinator untuk dapat melakukan login!</p>
+                <p class="login-box-msg">Panitia yang belum terdaftar agar menghubungi koordinator untuk dapat melakukan login!</p>
                 <form action="{{ route('admin.login') }}" method="post">
                     @csrf
                     @error('username')
@@ -54,7 +54,7 @@
                             <div class="icheck-primary">
                                 <input name="remember" type="checkbox" id="remember">
                                 <label for="remember">
-                                    Remember Me
+                                    Biarkan saya tetap login
                                 </label>
                             </div>
                         </div>
@@ -65,6 +65,11 @@
                         <!-- /.col -->
                     </div>
                 </form>
+
+
+                <p class="mb-0 mt-3">
+                    <a href="/auth/login" class="text-center">Anda peserta? Login disini</a>
+                </p>
             </div>
             <!-- /.login-card-body -->
         </div>

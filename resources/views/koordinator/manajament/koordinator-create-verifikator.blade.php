@@ -41,7 +41,17 @@
                                             <td>{{ $peserta->semester ? $peserta->semester->nama : '' }}</td>
                                             <td>{{ $panitia->name }}</td>
                                             <td></td>
-                                            <td><button class="btn btn-sm btn-secondary">Edit</button></td>
+                                            <td>
+                                                <div class="btn-group" role="group" aria-label="Basic example">
+                                                    <button class="btn btn-sm btn-secondary edit-verified-peserta" data-userid="{{ $peserta->id }}" data-verifikator="{{ $panitia->id }}" data-toggle="modal" data-target="#editVerifikator"><i class="fa fa-edit"></i></button>
+                                                    <form action="{{ route('koordinator.destroy.verifikator.peserta') }}" method="post">
+                                                        @csrf
+                                                        <input type="hidden" name="peserta" value="{{ $peserta->id }}">
+                                                        <input type="hidden" name="panitia" value="{{ $panitia->id }}">
+                                                        <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+                                                    </form>
+                                                </div>
+                                            </td>
                                         </tr>
                                     @endforeach
                                 @endforeach
@@ -59,5 +69,6 @@
         </div>
     </div>
 
+    @include('koordinator.manajament.modal.modal-create-verifikator')
 
 </x-koordinator.koordinator-layout>

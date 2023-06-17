@@ -19,18 +19,19 @@ class AdminController extends Controller
             return redirect()->route('admin.dashboard');
         }
         if ($user->hasRole('koordinator')) {
+            session()->put('tahun', $this->tahun);
             return redirect()->route('koordinator.dashboard');
         }
         if ($user->hasRole('verifikator')) {
+            session()->put('tahun', $this->tahun);
             return redirect()->route('verifikator.dashboard');
         }
     }
 
     public function dashboard()
     {
-        $users = new User;
         return view('admin.admin-dashboard', [
-            'users' => $users,
+            'users' => new User,
             'pesertas' => Peserta::get(),
             'web' => [
                 'title' => 'Admin Panel',

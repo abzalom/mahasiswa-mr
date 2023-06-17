@@ -2,6 +2,7 @@
 
 namespace App\View\Components\Koordinator;
 
+use App\Models\Tahun;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -21,6 +22,8 @@ class KoordinatorNavbar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.koordinator.koordinator-navbar');
+        return view('components.koordinator.koordinator-navbar', [
+            'tahuns' => Tahun::all(),
+        ]);
     }
 }

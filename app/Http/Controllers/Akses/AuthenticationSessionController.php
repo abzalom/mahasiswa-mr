@@ -18,13 +18,14 @@ class AuthenticationSessionController extends Controller
     public function create()
     {
         if (auth()->guard('web')->check()) {
-            if (auth()->user()->hasRole('admin')) {
+            $user = User::find(auth()->user()->id);
+            if ($user->hasRole('admin')) {
                 return to_route('admin.dashboard');
             }
-            if (auth()->user()->hasRole('koordinator')) {
+            if ($user->hasRole('koordinator')) {
                 return to_route('koordinator.dashboard');
             }
-            if (auth()->user()->hasRole('verifikator')) {
+            if ($user->hasRole('verifikator')) {
                 return to_route('verifikator.dashboard');
             }
         }
@@ -37,9 +38,7 @@ class AuthenticationSessionController extends Controller
     public function store(LoginRequest $request)
     {
         $request->authenticate();
-
-        $test = $request->session()->regenerate();
-
+        $request->session()->regenerate();
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
@@ -50,11 +49,8 @@ class AuthenticationSessionController extends Controller
     public function destroy(Request $request): RedirectResponse
     {
         Auth::guard('peserta')->logout();
-
         $request->session()->invalidate();
-
         $request->session()->regenerateToken();
-
         return redirect('/');
     }
 }

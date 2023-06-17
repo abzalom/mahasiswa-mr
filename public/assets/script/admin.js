@@ -22,6 +22,10 @@ $(document).ready(function () {
     })
 
     $('.datatable').dataTable();
+    $('.datatable-component').dataTable({
+        searching: false,
+        lengthMenu: [5],
+    });
 
     $('#datatable').dataTable({
         "responsive": true,
